@@ -1,0 +1,30 @@
+{
+  "name": "Shark Feast",
+  "short_name": "Shark Feast",
+  "id": "app.thiago.shark",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": [{
+        "src": "tub16.png",
+        "sizes": "36x36"
+      },{
+        "src": "tub16.png",
+        "sizes": "48x48"
+      },{
+        "src": "tub16.png",
+        "sizes": "72x72"
+      },{
+        "src": "tub16.png",
+        "sizes": "96x96"
+      },{
+        "src": "tub16.png",
+        "sizes": "144x144"
+      },{
+        "src": "tub16.png",
+        "sizes": "192x192"
+      }]
+}
