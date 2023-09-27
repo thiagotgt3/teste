@@ -1,12 +1,42 @@
+/* Estilos para o corpo do documento */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
 /* Estilos para o vídeo */
 video {
     width: 100%;
     height: auto;
 }
 
+/* Estilos para o cabeçalho */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
 /* Estilos para o carrossel */
 .carousel-container {
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -16,18 +46,91 @@ video {
     padding: 20px;
 }
 
-/* Estilos para os blocos informativos */
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para os blocos de informação */
 .info-block {
     background-color: #f0f0f0;
     padding: 20px;
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative; /* Adicionado para posicionamento da moldura */
 }
 
-.info-block h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.info-item {
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Adicionado para posicionamento da moldura */
 }
 
-.info-block p {
+.info-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-item button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Moldura de destaque */
+.highlight-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid #777;
+    z-index: -1;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header a {
+        margin: 10px 0;
+    }
+
+    .carousel-container {
+        max-width: none;
+    }
+
+    .info-item {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: yellow;
+    padding: 20px;
+}
+
+.sitemap {
+    text-align: center;
+}
+
+.sitemap a {
+    text-decoration: none;
+    margin: 0 10px;
 }
