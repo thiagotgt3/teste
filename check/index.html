@@ -5,37 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <style>
-        /* Adicione estilos personalizados aqui */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-        }
-
-        .carousel-container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .carousel-slide {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .info-block {
-            background-color: #f0f0f0;
-            padding: 20px;
-            margin: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="header">
+        <img src="th3d.png" alt="Thiago3dGames" class="logo">
+        <div>
+            <a href="#">Categoria 1</a>
+            <a href="#">Categoria 2</a>
+            <a href="#">Categoria 3</a>
+        </div>
+    </div>
+
     <video autoplay loop muted>
         <source src="gla2.mp4" type="video/mp4">
         Seu navegador não suporta vídeos em HTML5.
@@ -44,14 +25,38 @@
     <div class="carousel-container">
         <div class="carousel">
             <div class="carousel-slide">
-                <img src="imagem1.jpg" alt="Imagem 1">
+                <a href="https://seulink1.com" target="_blank">
+                    <img src="imagem1.jpg" alt="Imagem 1">
+                </a>
             </div>
             <div class="carousel-slide">
-                <img src="imagem2.jpg" alt="Imagem 2">
+                <a href="https://seulink2.com" target="_blank">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                </a>
             </div>
             <div class="carousel-slide">
-                <img src="imagem3.jpg" alt="Imagem 3">
+                <a href="https://seulink3.com" target="_blank">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                </a>
             </div>
+        </div>
+    </div>
+
+    <div class="info-block">
+        <div class="info-item">
+            <img src="imagem1.jpg" alt="Imagem da Coluna 1">
+            <p>Descrição da Coluna 1</p>
+            <button><a href="https://link_coluna1.com" target="_blank">Saiba Mais</a></button>
+        </div>
+        <div class="info-item">
+            <img src="imagem2.jpg" alt="Imagem da Coluna 2">
+            <p>Descrição da Coluna 2</p>
+            <button><a href="https://link_coluna2.com" target="_blank">Saiba Mais</a></button>
+        </div>
+        <div class="info-item">
+            <img src="imagem3.jpg" alt="Imagem da Coluna 3">
+            <p>Descrição da Coluna 3</p>
+            <button><a href="https://link_coluna3.com" target="_blank">Saiba Mais</a></button>
         </div>
     </div>
 
@@ -63,6 +68,16 @@
     <div class="info-block">
         <h2>Bloco Informativo 2</h2>
         <p>Outra informação relevante pode ser colocada aqui.</p>
+    </div>
+
+    <div class="footer">
+        <div class="sitemap">
+            <a href="#">Página Inicial</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Serviços</a>
+            <a href="#">Portfólio</a>
+            <a href="#">Contato</a>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

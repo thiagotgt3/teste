@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel de Administração</title>
+</head>
+<body>
+    <h1>Painel de Administração</h1>
+    <h2>Atualizar Vídeo de Topo</h2>
+    <form action="update_video.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <input type="submit" value="Atualizar Vídeo">
+    </form>
+
+    <h2>Atualizar Imagens do Carrossel</h2>
+    <form action="update_images.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="images[]" accept="image/*" multiple required>
+        <input type="submit" value="Atualizar Imagens">
+    </form>
+
+    <h2>Editar Rodapé</h2>
+    <form action="update_footer.php" method="post">
+        <label for="link1_text">Texto do Link 1:</label>
+        <input type="text" name="link1_text" required><br>
+        <label for="link1_url">URL do Link 1:</label>
+        <input type="text" name="link1_url" required><br>
+
+        <!-- Repetir para outros links do rodapé -->
+
+        <input type="submit" value="Salvar Rodapé">
+    </form>
+</body>
+</html>
