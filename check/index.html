@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        /* Adicione estilos personalizados aqui */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .carousel-slide {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .info-block {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="gla2.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="imagem1.jpg" alt="Imagem 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagem2.jpg" alt="Imagem 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagem3.jpg" alt="Imagem 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="info-block">
+        <h2>Bloco Informativo 1</h2>
+        <p>Alguma informação importante aqui.</p>
+    </div>
+
+    <div class="info-block">
+        <h2>Bloco Informativo 2</h2>
+        <p>Outra informação relevante pode ser colocada aqui.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        // Inicialize o carrossel
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: true
+            });
+        });
+    </script>
+</body>
+</html>
