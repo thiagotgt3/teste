@@ -6,14 +6,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilize o link de categoria ativo */
+        .active {
+            color: yellow;
+            /* Adicione outros estilos desejados aqui */
+        }
+    </style>
 </head>
 <body>
     <div class="header">
         <img src="th3d.png" alt="Thiago3dGames" class="logo">
         <div>
-            <a href="#">Categoria 1</a>
-            <a href="#">Categoria 2</a>
-            <a href="#">Categoria 3</a>
+            <a href="#" class="category-link">Categoria 1</a>
+            <a href="#" class="category-link">Categoria 2</a>
+            <a href="#" class="category-link">Categoria 3</a>
         </div>
     </div>
 
@@ -83,6 +90,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+        // Função para lidar com o clique nos links de categoria
+        $('.category-link').click(function() {
+            // Remova a classe "active" de todos os links de categoria
+            $('.category-link').removeClass('active');
+            // Adicione a classe "active" apenas ao link clicado
+            $(this).addClass('active');
+        });
+
         // Inicialize o carrossel
         $(document).ready(function(){
             $('.carousel').slick({

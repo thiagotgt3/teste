@@ -12,6 +12,20 @@ video {
     height: auto;
 }
 
+/* Estilize o link de categoria ativo */
+.category-link.active {
+    color: yellow;
+    /* Adicione outros estilos desejados aqui */
+}
+
+
+
+
+
+
+
+
+
 /* Estilos para o cabeçalho */
 .header {
     background-color: #333;
